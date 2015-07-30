@@ -1,0 +1,43 @@
+/* Global */
+.flex {
+	display: flex;
+}
+
+web-slide {
+	background: #F6F6F6;
+}
+
+pre[is="lang-javascript"] {
+	font-size: 0.8em;
+}
+
+/* Welcome */
+web-slide-title#welcome {
+	background: #FF5858;
+}
+web-slide-title#welcome h1 {
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 2.8em;
+}
+web-slide-title#welcome img {
+	width: 30%;
+}
+
+/* About us */
+web-slide#aboutus {
+	background: #2c2e31;
+	color: #FFF;
+}
+web-slide#aboutus img {
+	width: 100px;
+	border-radius: 50%;
+	border: 2px solid #FFF;
+}
+web-slide#aboutus .flex > div {
+	margin: 10px;
+}
+web-slide#aboutus .desc {
+	color: #AAA;
+	font-size: 0.8em;
+}

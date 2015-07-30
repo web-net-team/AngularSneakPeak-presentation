@@ -1,0 +1,14 @@
+{
+  "name": "angular2-sneakpeak-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "jade index.jade",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Kohler & Michael Lehmann",
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
+}
