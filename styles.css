@@ -63,3 +63,40 @@ web-slide#aboutus .desc {
 web-slide#appintro img {
 	width: 100%;
 }
+web-slide#appintro #app {
+	position: relative;
+}
+web-slide#appintro div.highlight {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background: rgba(175, 91, 57, 0.2);
+    position: absolute;
+    border: 3px solid #FF5252;
+	color: #FF5252;
+	font-size: 1.5em;
+}
+web-slide#appintro div.highlight-app {
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+web-slide#appintro div.highlight-navbar {
+    top: 0;
+	height: 7%;
+    left: 0;
+    right: 0;
+}
+web-slide#appintro div.highlight-board {
+    top: 8%;
+	bottom: 0;
+    left: 0;
+    right: 0;
+}
+web-slide#appintro div.highlight-list {
+    top: 14%;
+	bottom: 0;
+    left: 0;
+    width: 25%;
+}
