@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "jade index.jade",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parallelshell \"npm run serve -s\" \"npm run watch -s\" \"npm run livereload -s\"",
+    "build": "jade index.jade",
+    "watch": "watch \"npm run build\" slides/",
+    "serve": "http-server",
+    "livereload": "live-reload --port 9091 index.html styles.css"
   },
   "author": "Christian Kohler & Michael Lehmann",
   "devDependencies": {
-    "jade": "^1.11.0"
+    "http-server": "^0.8.0",
+    "jade": "^1.11.0",
+    "live-reload": "^1.1.0",
+    "parallelshell": "^2.0.0",
+    "watch": "^0.16.0"
   }
 }
