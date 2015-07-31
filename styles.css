@@ -11,6 +11,23 @@ pre[is="lang-javascript"] {
 	font-size: 0.8em;
 }
 
+img {
+	vertical-align: middle;
+}
+
+mockup-browser {
+	width: 80%;
+	box-shadow: 0px 0px 3px 3px rgba(200, 200, 200, 0.2);
+}
+
+web-slide::shadow div#content,
+web-slide-title::shadow div#content {
+      width: 960px;
+      height: 700px;
+      margin-top: -350px;
+      margin-left: -480px;
+}
+
 /* Welcome */
 web-slide-title#welcome {
 	background: #FF5858;
@@ -40,4 +57,9 @@ web-slide#aboutus .flex > div {
 web-slide#aboutus .desc {
 	color: #AAA;
 	font-size: 0.8em;
+}
+
+/* App Intro */
+web-slide#appintro img {
+	width: 100%;
 }
