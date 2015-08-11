@@ -8,7 +8,9 @@
     "build": "jade index.jade",
     "watch": "watch \"npm run build\" slides/",
     "serve": "http-server",
-    "livereload": "live-reload --port 9091 index.html styles.css"
+    "livereload": "live-reload --port 9091 index.html styles.css",
+    "publish": "git push -f origin master:gh-pages",
+    "prepublish": "npm run build"
   },
   "author": "Christian Kohler & Michael Lehmann",
   "devDependencies": {
