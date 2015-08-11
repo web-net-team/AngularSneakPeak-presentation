@@ -5,4 +5,4 @@
     npm start
     
 ## Publish to Gh-Pages
-    npm publish
+    npm run publish
