@@ -1,0 +1,40 @@
+web-slide#propertydefinition
+	h1 Property Binding
+	'component-property : property-binding'
+	
+	pre(is="lang-javascript", theme="dark").
+		@Component({
+		  selector: 'person'
+		  properties:['name:first-name', 'age']
+		})
+		@View({
+		  template: 'Hello {{name}}}'
+		})
+		// Component controller
+		class PersonComponent {
+		  name: string;
+		  
+		  set age(value: number) {
+		  	...
+		  }
+		}
+		
+web-slide#propertybinding
+	h1 Property Binding
+	[square brackets]
+	
+	pre(is="lang-javascript", theme="dark").
+		@Component({
+		  selector: 'my-app'
+		})
+		@View({
+		  template: '&lt;Person [first-name]="name" [age]="23" /&gt;'
+		})
+		// Component controller
+		class MyAppComponent {
+		  name: string;
+		  
+		  constructor() {
+		    this.name = 'Alice';
+		  }
+		}

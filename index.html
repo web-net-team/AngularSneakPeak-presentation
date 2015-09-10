@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link href="https://cdn.rawgit.com/ChristianKohler/web-presentation/v1.0.2/dist/web-presentation.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/html-mocks/master/html-mocks.html" rel="import"><link href="styles.css" rel="stylesheet"></head><body><web-presentation><web-presentation-keyboardcontrols></web-presentation-keyboardcontrols><web-presentation-progress></web-presentation-progress><web-slide-title id="welcome"><h1>Angular 2.0 Sneak Peak</h1><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/111197/images/1333005/angular-logo-white.svg"></web-slide-title><web-slide id="aboutus"><h2>About Us</h2><div class="flex"><div><img src="images/photo-chris.jpg"><p>Michael Lehmann</p><p class="desc">Lorem ipsum dolor sit.</p></div><div><img src="images/photo-chris.jpg"><p>Christian Kohler</p><p class="desc">Lorem ipsum dolor sit.</p></div></div></web-slide><web-slide-title id="topics"><h1>What do we show you today?</h1></web-slide-title><web-slide id="appintro"><mockup-browser><div id="app"><img src="images/kanban-app-screenshot.png"><div data-enter="1" data-exit="2" class="highlight highlight-app">Application</div><div data-enter="2" data-exit="3" class="highlight highlight-navbar">Navbar</div><div data-enter="3" data-exit="4" class="highlight highlight-board">Board</div><div data-enter="4" class="highlight highlight-list">List</div></div></mockup-browser></web-slide><web-slide-title id="intro"><h1>why ng2</h1></web-slide-title><web-slide id="technologies"><h1>technologies</h1></web-slide><web-slide id="caniuse"><h1>caniuse</h1></web-slide><web-slide id="rip"><h1>rip</h1></web-slide><web-slide-title id="kanbanapp"><h1>kanbanapp</h1></web-slide-title><web-slide id="helloworld"><pre is="lang-javascript" theme="dark">@Component({
+<!DOCTYPE html><html><head><link href="https://cdn.rawgit.com/ChristianKohler/web-presentation/v1.0.2/dist/web-presentation.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/html-mocks/master/html-mocks.html" rel="import"><link href="styles.css" rel="stylesheet"></head><body><web-presentation><web-presentation-keyboardcontrols></web-presentation-keyboardcontrols><web-presentation-progress></web-presentation-progress><web-slide-title id="welcome"><h1>Angular 2.0 Sneak Peak</h1><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/111197/images/1333005/angular-logo-white.svg"></web-slide-title><web-slide id="aboutus"><h2>About Us</h2><div class="flex"><div><img src="images/leh.jpg"><p>Michael Lehmann</p><p class="desc">Lorem ipsum dolor sit.</p></div><div><img src="images/chko.jpg"><p>Christian Kohler</p><p class="desc">Lorem ipsum dolor sit.</p></div></div></web-slide><web-slide-title id="topics"><h1>What do we show you today?</h1></web-slide-title><web-slide id="appintro"><mockup-browser><div id="app"><img src="images/kanban-app-screenshot.png"><div data-enter="1" data-exit="2" class="highlight highlight-app">Application</div><div data-enter="2" data-exit="3" class="highlight highlight-navbar">Navbar</div><div data-enter="3" data-exit="4" class="highlight highlight-board">Board</div><div data-enter="4" class="highlight highlight-list">List</div></div></mockup-browser></web-slide><web-slide-title id="intro"><h1>why ng2</h1></web-slide-title><web-slide id="technologies"><h1>technologies</h1></web-slide><web-slide id="caniuse"><h1>caniuse</h1></web-slide><web-slide id="rip"><h1>rip</h1></web-slide><web-slide-title id="kanbanapp"><h1>kanbanapp</h1></web-slide-title><web-slide id="helloworld"><pre is="lang-javascript" theme="dark">@Component({
   selector: 'my-app'
 })
 @View({
@@ -11,4 +11,32 @@ class MyAppComponent {
   constructor() {
     this.name = 'Alice';
   }
-}</pre></web-slide><web-slide id="hierachy"><h1>Components Hierachy</h1><img src="images/hierachy.svg" width="70%"></web-slide><web-slide id="di"><h1>di</h1></web-slide><web-slide id="directives"><h1>directives</h1></web-slide><web-slide id="properties"><h1>properties</h1></web-slide><web-slide id="forms"><h1>forms</h1></web-slide><web-slide id="interrail"><h1>interrail</h1></web-slide><web-slide-title id="migraton"><h1>migraton</h1></web-slide-title><web-slide-title id="questions"><h1>questions</h1></web-slide-title></web-presentation><script src="//localhost:9091">// livereload</script></body></html>
+}</pre></web-slide><web-slide id="hierachy"><h1>Components Hierachy</h1><img src="images/hierachy.svg" width="70%"></web-slide><web-slide id="di"><h1>di</h1></web-slide><web-slide id="directives"><h1>directives</h1></web-slide><web-slide id="properties"><h1>properties</h1></web-slide><web-slide id="propertydefinition"><h1>Property Binding</h1>'component-property : property-binding'<pre is="lang-javascript" theme="dark">@Component({
+  selector: 'person'
+  properties:['name:first-name', 'age']
+})
+@View({
+  template: 'Hello {{name}}}'
+})
+// Component controller
+class PersonComponent {
+  name: string;
+  
+  set age(value: number) {
+  	...
+  }
+}
+</pre></web-slide><web-slide id="propertybinding"><h1>Property Binding</h1>[square brackets]<pre is="lang-javascript" theme="dark">@Component({
+  selector: 'my-app'
+})
+@View({
+  template: '&lt;Person [first-name]="name" [age]="23" /&gt;'
+})
+// Component controller
+class MyAppComponent {
+  name: string;
+  
+  constructor() {
+    this.name = 'Alice';
+  }
+}</pre></web-slide><web-slide id="forms"><h1>forms</h1></web-slide><web-slide id="interrail"><h1>interrail</h1></web-slide><web-slide-title id="migraton"><h1>migraton</h1></web-slide-title><web-slide-title id="questions"><h1>questions</h1></web-slide-title></web-presentation><script src="//localhost:9091">// livereload</script></body></html>

@@ -12,9 +12,15 @@ web-slide#di
 	
 web-slide#directives
 	h1 directives
+	ul
+		li &lt;li *ng-for="#item of items; #i = index"&gt;...&lt;/li&gt;
+ 		li &lt;li template="ng-for #item of items; #i = index"&gt;...&lt;/li&gt;
+ 		li &lt;template ng-for #item [ng-for-of]="items" #i="index"&gt;&lt;li&gt;...&lt;/li&gt;&lt;/template&gt;
 	
 web-slide#properties
 	h1 properties
+
+include ./properties.jade
 	
 web-slide#forms
 	h1 forms
