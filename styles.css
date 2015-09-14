@@ -72,13 +72,14 @@ web-slide#aboutus {
 	background: -o-linear-gradient(left, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
 	background: linear-gradient(to right, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
 }
-web-slide div.left { color: #FFF; }
-web-slide div.right { color: #333; }
+web-slide#aboutus div.left { color: #FFF; }
+web-slide#aboutus div.right { color: #333; }
 web-slide#aboutus img {
 	width: 100px;
 	border-radius: 50%;
 	border: 2px solid #FFF;
 }
+web-slide#aboutus div.right img { border-color: #EEE; }
 web-slide#aboutus .flex > div {
 	margin: 50px;
 }
