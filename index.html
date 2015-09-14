@@ -11,4 +11,22 @@ class MyAppComponent {
   constructor() {
     this.name = 'Alice';
   }
-}</pre></web-slide><web-slide id="hierachy"><h1>Components Hierachy</h1><img src="images/hierachy.svg" width="70%"></web-slide><web-slide id="di"><h1>di</h1></web-slide><web-slide id="directives"><h1>directives</h1></web-slide><web-slide id="properties"><h1>properties</h1></web-slide><web-slide id="forms"><h1>forms</h1></web-slide><web-slide id="interrail"><h1>interrail</h1></web-slide><web-slide-title id="migraton"><h1>migraton</h1></web-slide-title><web-slide-title id="questions"><h1>questions</h1></web-slide-title></web-presentation><script src="//localhost:9091">// livereload</script></body></html>
+}</pre></web-slide><web-slide id="hierachy"><h1>Components Hierachy</h1><img src="images/hierachy.svg" width="70%"></web-slide><web-slide id="di"><h1>di</h1></web-slide><web-slide id="templateyntax1"><h1>Template Syntax (1/2)</h1>Some theory about Directives</web-slide><web-slide id="localvariables"><H2>Local Variables</H2><pre is="lang-javascript" theme="dark">&lt;video-player #player&gt;&lt;/video-player&gt;
+&lt;button (click)=&quot;player.pause()&quot;&gt;Pause&lt;/button&gt;
+</pre></web-slide><web-slide id="directivesandtemplates"><H2>Templates And *</H2><pre is="lang-javascript" theme="dark">&lt;todo-cmp *ng-for=&quot;#t of todos; #i=index&quot; [model]=&quot;t&quot; [index]=&quot;t&quot;&gt;&lt;/todo-cmp&gt;</pre><which>de-sugars into</which><pre is="lang-javascript" theme="dark">&lt;template ng-for ngForOf=&quot;todos&quot; #t=&quot;$implicit&quot; #index=&quot;i&quot;&gt;
+	&lt;todo-cmp [model]=&quot;t&quot; [index]=&quot;i&quot;&gt;&lt;/todo-cmp&gt;
+&lt;/template&gt;	</pre></web-slide><web-slide id="directives"><h1>directives</h1></web-slide><web-slide id="templatesyntax2"><h1>Template Syntax (2/2)</h1>Theory about propertries and events</web-slide><web-slide id="propertiesandevents"><h2>Property And Event Bindings</h2>Property Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;myTodo&quot;&gt;&lt;/todo-cmp&gt;</pre>Event Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;todo&quot; (complete)=&quot;onCompletingTodo(todo)&quot;&gt;&lt;/todo-cmp&gt;</pre></web-slide><web-slide id="eventpropagation"><h2>Property And Event Code Behind</h2><pre is="lang-javascript" theme="dark">@Component({
+  selector: 'todo-cmp',
+  properties: ['model'],
+  events: ['complete']
+})
+// Component controller
+class TodoCmp {
+	model;
+	complete = new EventEmitter();
+	
+	onCompletedButton() {
+		this.complete.next(); // this fires an event
+	}  
+}
+</pre></web-slide><web-slide id="twowaybinding"><H2>Two-Way binding	</H2><pre is="lang-javascript" theme="dark">&lt;input [ng-model]=&quot;todo.text&quot; (ng-model)=&quot;todo.text=$event&quot;&gt;&lt;/input&gt;</pre>Or with syntactical sugar	<pre is="lang-javascript" theme="dark">&lt;input [(ng-model)]=&quot;todo.text&quot;&gt;&lt;/input&gt;</pre></web-slide><web-slide id="properties"><h1>properties</h1></web-slide><web-slide id="forms"><h1>forms</h1></web-slide><web-slide id="events"><h1>events</h1></web-slide><web-slide id="interrail"><h1>interrail</h1></web-slide><web-slide-title id="migraton"><h1>migraton</h1></web-slide-title><web-slide-title id="questions"><h1>questions</h1></web-slide-title></web-presentation><script src="//localhost:9091">// livereload</script></body></html>
