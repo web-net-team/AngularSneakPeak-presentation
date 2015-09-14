@@ -15,9 +15,20 @@ img {
 	vertical-align: middle;
 }
 
+web-slide > h1, web-slide > h2 {
+	color: #333;
+	font-size: 3.5em;
+}
+
 mockup-browser {
 	width: 80%;
 	box-shadow: 0px 0px 3px 3px rgba(200, 200, 200, 0.2);
+}
+
+web-slide#forms1 li {
+	text-align: left;
+	font-size: 1.5em;
+	margin: 10px 0;
 }
 
 web-slide::shadow div#content,
@@ -26,6 +37,20 @@ web-slide-title::shadow div#content {
       height: 700px;
       margin-top: -350px;
       margin-left: -480px;
+}
+
+.fullscreen-image {
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-size: cover;	
+}
+
+.align-left::shadow div#content {
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  padding: 20px;
 }
 
 /* Welcome */
@@ -43,16 +68,21 @@ web-slide-title#welcome img {
 
 /* About us */
 web-slide#aboutus {
-	background: #2c2e31;
-	color: #FFF;
+	background: #000333;
+	background: -webkit-linear-gradient(left, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
+	background: -o-linear-gradient(left, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
+	background: linear-gradient(to right, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
 }
+web-slide#aboutus div.left { color: #FFF; }
+web-slide#aboutus div.right { color: #333; }
 web-slide#aboutus img {
 	width: 100px;
 	border-radius: 50%;
 	border: 2px solid #FFF;
 }
+web-slide#aboutus div.right img { border-color: #EEE; }
 web-slide#aboutus .flex > div {
-	margin: 10px;
+	margin: 50px;
 }
 web-slide#aboutus .desc {
 	color: #AAA;
@@ -100,3 +130,16 @@ web-slide#appintro div.highlight-list {
     left: 0;
     width: 25%;
 }
+
+web-slide-title#topics div#topics-container {
+	display: flex;
+}
+web-slide-title#topics div#topics-container > div{
+	background: #FF5252; 
+	margin: 20px; 
+	padding: 20px;
+	font-size: 1.4em;
+	border-radius: 3px;
+}
+
+web-slide#rip h1, web-slide#rip h2 { color: #FFF; }

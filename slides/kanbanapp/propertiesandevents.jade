@@ -1,0 +1,40 @@
+web-slide#templatesyntax2
+	h1 Template Syntax
+	| Theory about propertries and events
+	
+web-slide#propertiesandevents
+	h2 Property And Event Bindings
+	| Property Bindings
+	pre(is="lang-javascript", theme="dark")
+		= '<todo-cmp [model]="myTodo"></todo-cmp>'
+	
+	| Event Bindings
+	pre(is="lang-javascript", theme="dark")
+		= '<todo-cmp [model]="todo" (complete)="onCompletingTodo(todo)"></todo-cmp>'
+			
+web-slide#eventpropagation
+	h2 Property And Event Code Behind
+	pre(is="lang-javascript", theme="dark").
+		@Component({
+		  selector: 'todo-cmp',
+		  properties: ['model'],
+		  events: ['complete']
+		})
+		// Component controller
+		class TodoCmp {
+			model;
+			complete = new EventEmitter();
+			
+			onCompletedButton() {
+				this.complete.next(); // this fires an event
+			}  
+		}
+		
+web-slide#twowaybinding
+	H2 Two-Way binding	
+	pre(is="lang-javascript", theme="dark")
+		= '<input [ng-model]="todo.text" (ng-model)="todo.text=$event"></input>'
+		
+	| Or with syntactical sugar	
+	pre(is="lang-javascript", theme="dark")
+		= '<input [(ng-model)]="todo.text"></input>'			
