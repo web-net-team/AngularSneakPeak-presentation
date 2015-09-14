@@ -38,6 +38,20 @@ web-slide-title::shadow div#content {
       margin-left: -480px;
 }
 
+.fullscreen-image {
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-size: cover;	
+}
+
+.align-left::shadow div#content {
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  padding: 20px;
+}
+
 /* Welcome */
 web-slide-title#welcome {
 	background: #FF5858;
@@ -113,4 +127,15 @@ web-slide#appintro div.highlight-list {
 	bottom: 0;
     left: 0;
     width: 25%;
+}
+
+web-slide-title#topics div#topics-container {
+	display: flex;
+}
+web-slide-title#topics div#topics-container > div{
+	background: #FF5252; 
+	margin: 20px; 
+	padding: 20px;
+	font-size: 1.4em;
+	border-radius: 3px;
 }
