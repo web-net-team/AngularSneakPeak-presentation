@@ -15,7 +15,7 @@ img {
 	vertical-align: middle;
 }
 
-h1, h2 {
+web-slide > h1, web-slide > h2 {
 	color: #333
 }
 
@@ -139,3 +139,5 @@ web-slide-title#topics div#topics-container > div{
 	font-size: 1.4em;
 	border-radius: 3px;
 }
+
+web-slide#rip h1, web-slide#rip h2 { color: #FFF; }
