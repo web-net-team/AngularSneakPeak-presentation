@@ -28,6 +28,20 @@ web-slide-title::shadow div#content {
       margin-left: -480px;
 }
 
+.fullscreen-image {
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-size: cover;	
+}
+
+.align-left::shadow div#content {
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  padding: 20px;
+}
+
 /* Welcome */
 web-slide-title#welcome {
 	background: #FF5858;
