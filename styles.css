@@ -118,3 +118,14 @@ web-slide#appintro div.highlight-list {
     left: 0;
     width: 25%;
 }
+
+web-slide-title#topics div#topics-container {
+	display: flex;
+}
+web-slide-title#topics div#topics-container > div{
+	background: #556270; 
+	margin: 20px; 
+	padding: 20px;
+	font-size: 1.4em;
+	border-radius: 3px;
+}
