@@ -16,7 +16,8 @@ img {
 }
 
 web-slide > h1, web-slide > h2 {
-	color: #333
+	color: #333;
+	font-size: 3.5em;
 }
 
 mockup-browser {
