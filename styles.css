@@ -43,16 +43,20 @@ web-slide-title#welcome img {
 
 /* About us */
 web-slide#aboutus {
-	background: #2c2e31;
-	color: #FFF;
+	background: #000333;
+	background: -webkit-linear-gradient(left, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
+	background: -o-linear-gradient(left, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
+	background: linear-gradient(to right, #000333 1%, #000333 50%, #fafafa 50%, #fafafa 50%, #fafafa 100%);
 }
+web-slide div.left { color: #FFF; }
+web-slide div.right { color: #333; }
 web-slide#aboutus img {
 	width: 100px;
 	border-radius: 50%;
 	border: 2px solid #FFF;
 }
 web-slide#aboutus .flex > div {
-	margin: 10px;
+	margin: 50px;
 }
 web-slide#aboutus .desc {
 	color: #AAA;
