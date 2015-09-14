@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="hierachy.svg">
+   sodipodi:docname="hierachy-di.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="758.44742"
-     inkscape:cy="317.15008"
+     inkscape:cx="517.93243"
+     inkscape:cy="479.8633"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3440-4"
      showgrid="false"
      inkscape:snap-text-baseline="true"
      inkscape:window-width="1600"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -153,14 +153,14 @@
        inkscape:connection-end="#g3411-1"
        inkscape:connection-start="#g3352" />
     <g
-       id="hierachy-list"
-       transform="translate(476.17855,146.19295)"
-       inkscape:label="#hierachy-list">
+       id="g3411-1-9"
+       transform="translate(484.87322,-142.4315)">
       <g
-         id="g3514">
+         transform="translate(93.944187,-18.182746)"
+         id="g3440-4">
         <rect
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="rect3344-8-2-7"
+           style="fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-6"
            width="232.48476"
            height="85.002487"
            x="155.48866"
@@ -169,60 +169,29 @@
            rx="5.0046053" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="246.69504"
-           y="624.84894"
-           id="text3348-1-1-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#005300;fill-opacity:0.49803922;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           x="271.50278"
+           y="608.04413"
+           id="text3348-1-1-1"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
-             id="tspan3350-5-5-7"
-             x="246.69504"
-             y="624.84894">List</tspan></text>
-      </g>
-      <path
-         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 271.73104,503.74147 0,68.72343"
-         id="path3519"
-         inkscape:connector-type="polyline"
-         inkscape:connector-curvature="3"
-         inkscape:connection-end="#g3514"
-         inkscape:connection-start="#g3411-1" />
-    </g>
-    <g
-       id="g3440-4-5"
-       transform="translate(481.60541,363.77105)">
-      <g
-         id="g3514-7"
-         transform="translate(-5.42686,-63.639611)">
-        <rect
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           id="rect3344-8-2-7-3"
-           width="232.48476"
-           height="85.002487"
-           x="156.01201"
-           y="572.4649"
-           ry="3.1889675"
-           rx="5.0046053" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="200.70471"
-           y="624.84894"
-           id="text3348-1-1-8-9"
-           sodipodi:linespacing="125%"><tspan
+             id="tspan3350-5-5-5"
+             x="271.50278"
+             y="608.04413"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Board</tspan><tspan
              sodipodi:role="line"
-             id="tspan3350-5-5-7-7"
-             x="200.70471"
-             y="624.84894">AddButton</tspan></text>
+             x="271.50278"
+             y="642.41913"
+             id="tspan3388"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Service</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:1.552;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 243.41276,657.2918 -45.80088,68.25438"
+           id="path4190"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="3"
+           inkscape:connection-end="#g3411-1" />
       </g>
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 266.70927,508.82529 -0.19181,-68.936"
-         id="path3581"
-         inkscape:connector-type="polyline"
-         inkscape:connector-curvature="3"
-         inkscape:connection-start="#g3514-7"
-         inkscape:connection-end="#g3440-4" />
     </g>
   </g>
 </svg>
