@@ -75,14 +75,15 @@ web-slide#aboutus {
 }
 web-slide#aboutus div.left { color: #FFF; }
 web-slide#aboutus div.right { color: #333; }
+web-slide#aboutus p { font-size: 1.5em; }
 web-slide#aboutus img {
-	width: 100px;
+	width: 150px;
 	border-radius: 50%;
 	border: 2px solid #FFF;
 }
 web-slide#aboutus div.right img { border-color: #EEE; }
 web-slide#aboutus .flex > div {
-	margin: 50px;
+	margin: 0 80px;
 }
 web-slide#aboutus .desc {
 	color: #AAA;
