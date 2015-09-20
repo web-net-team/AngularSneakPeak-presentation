@@ -66,6 +66,8 @@ web-slide-title#welcome img {
 	width: 30%;
 }
 
+.smiley { font-size: 5em; }
+
 /* About us */
 web-slide#aboutus {
 	background: #000333;
