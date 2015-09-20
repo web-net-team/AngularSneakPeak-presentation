@@ -1,0 +1,26 @@
+<g
+       transform="translate(32.721578,-315.79)"
+       id="g3411">
+      <rect
+         rx="5.0046053"
+         ry="3.1889675"
+         y="572.4649"
+         x="155.48866"
+         height="85.002487"
+         width="232.48476"
+         id="rect3344-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3348-1"
+         y="625.20477"
+         x="221.04135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="625.20477"
+           x="221.04135"
+           id="tspan3350-5"
+           sodipodi:role="line">Navbar</tspan></text>
+           
+        <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 450.12157,452.33536 271.51215,571.93193" id="path3469" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-start="#g3352" inkscape:connection-end="#g3411"/>
+    </g>

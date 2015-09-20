@@ -1,4 +1,84 @@
-<!DOCTYPE html><html><head><link href="https://cdn.rawgit.com/ChristianKohler/web-presentation/v1.0.2/dist/web-presentation.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/html-mocks/master/html-mocks.html" rel="import"><link href="styles.css" rel="stylesheet"></head><body><web-presentation><web-presentation-keyboardcontrols></web-presentation-keyboardcontrols><web-presentation-progress></web-presentation-progress><web-slide-title id="welcome"><h1>Angular 2.0 Sneak Peak</h1><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/111197/images/1333005/angular-logo-white.svg"></web-slide-title><web-slide id="aboutus"><div class="flex"><div class="left"><img src="images/leh.jpg"><p>Michael Lehmann</p><p class="desc">@lehmamic</p></div><div class="right"><img src="images/chko.jpg"><p>Christian Kohler</p><p class="desc">@KohlerChristian</p></div></div></web-slide><web-slide-title id="topics"><h1>What do we show you today?</h1><div id="topics-container"><div data-enter="1">Why Angular2?</div><div data-enter="2">Kanban App</div><div data-enter="3">Migration Path</div></div></web-slide-title><web-slide-title id="intro"><h1>Why Angular2?</h1></web-slide-title><web-slide id="2009" style="background-image: url('images/barak.jpg'); color: #FFF; " class="fullscreen-image"><h1 style="font-size:10em; color: white;">Anno 2009	</h1></web-slide><web-slide id="technologies2009"><h1>Technologies 2009</h1><img src="./images/technologies_old_ng.svg" data-enter="2"><img src="./images/technologies_old_base.svg" data-enter="1"></web-slide><web-slide id="2009" style="background-image: url('images/vnext.jpg'); color: #FFF; " class="fullscreen-image"><h1 style="font-size:10em; color: white;">Today	</h1></web-slide><web-slide id="statement" style="background-image: url('images/stuetzraeder.jpg'); color: #FFF; " class="align-left fullscreen-image"><h1 style="font-size:2em; color: white;">&laquo;Our goal with Angular 2 is to make the best possible set of tools for building web apps not constrained by maintaining backwards compatibility with existing APIs.&raquo;</h1></web-slide><web-slide id="technologies2015"><h1>Technologies 2015</h1><img src="./images/technologies_new_ng.svg " data-enter="4"><img src="./images/technologies_new_base.svg " data-enter="3"></web-slide><web-slide id="rip" style="background-image: url('images/ngeurope.jpg'); color: #FFF; " class="align-left fullscreen-image"><h1>NgEurope 2014</h1><div class="flex"><img src="./images/rip1.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="1"><img src="./images/rip2.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="2"></div><div class="flex"><img src="./images/rip3.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="3"><img src="./images/rip4.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="4"></div></web-slide><web-slide-title id="kanbanapp"><h1>Kanban App</h1></web-slide-title><web-slide id="appintro"><mockup-browser><div id="app"><img src="images/kanban-app-screenshot.png"><div data-enter="1" data-exit="2" class="highlight highlight-app">Application</div><div data-enter="2" data-exit="3" class="highlight highlight-navbar">Navbar</div><div data-enter="3" data-exit="4" class="highlight highlight-board">Board</div><div data-enter="4" class="highlight highlight-list">List</div></div></mockup-browser></web-slide><web-slide id="hierachy"><h1>Components Hierachy</h1><img src="images/hierachy-components.svg" width="70%"></web-slide><web-slide id="helloworld"><pre is="lang-javascript" theme="dark">@Component({
+<!DOCTYPE html><html><head><link href="https://cdn.rawgit.com/ChristianKohler/web-presentation/v1.0.2/dist/web-presentation.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html" rel="import"><link href="https://cdn.rawgit.com/ChristianKohler/html-mocks/master/html-mocks.html" rel="import"><link href="styles.css" rel="stylesheet"></head><body><web-presentation><web-presentation-keyboardcontrols></web-presentation-keyboardcontrols><web-presentation-progress></web-presentation-progress><web-slide-title id="welcome"><h1>Angular 2.0 Sneak Peak</h1><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/111197/images/1333005/angular-logo-white.svg"></web-slide-title><web-slide id="aboutus"><div class="flex"><div class="left"><img src="images/leh.jpg"><p>Michael Lehmann</p><p class="desc">@lehmamic</p></div><div class="right"><img src="images/chko.jpg"><p>Christian Kohler</p><p class="desc">@KohlerChristian</p></div></div></web-slide><web-slide-title id="topics"><h1>What do we show you today?</h1><div id="topics-container"><div data-enter="1">Why Angular2?</div><div data-enter="2">Kanban App</div><div data-enter="3">Migration Path</div></div></web-slide-title><web-slide-title id="intro"><h1>Why Angular2?</h1></web-slide-title><web-slide id="2009" style="background-image: url('images/barak.jpg'); color: #FFF; " class="fullscreen-image"><h1 style="font-size:10em; color: white;">Anno 2009	</h1></web-slide><web-slide id="technologies2009"><h1>Technologies 2009</h1><img src="./images/technologies_old_ng.svg" data-enter="2"><img src="./images/technologies_old_base.svg" data-enter="1"></web-slide><web-slide id="2009" style="background-image: url('images/vnext.jpg'); color: #FFF; " class="fullscreen-image"><h1 style="font-size:10em; color: white;">Today	</h1></web-slide><web-slide id="statement" style="background-image: url('images/stuetzraeder.jpg'); color: #FFF; " class="align-left fullscreen-image"><h1 style="font-size:2em; color: white;">&laquo;Our goal with Angular 2 is to make the best possible set of tools for building web apps not constrained by maintaining backwards compatibility with existing APIs.&raquo;</h1></web-slide><web-slide id="technologies2015"><h1>Technologies 2015</h1><img src="./images/technologies_new_ng.svg " data-enter="4"><img src="./images/technologies_new_base.svg " data-enter="3"></web-slide><web-slide id="rip" style="background-image: url('images/ngeurope.jpg'); color: #FFF; " class="align-left fullscreen-image"><h1>NgEurope 2014</h1><div class="flex"><img src="./images/rip1.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="1"><img src="./images/rip2.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="2"></div><div class="flex"><img src="./images/rip3.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="3"><img src="./images/rip4.png" style="margin: 0 20px 20px 0; width: 50%; box-shadow: 1px 1px 1px 1px #666;" data-enter="4"></div></web-slide><web-slide-title id="kanbanapp"><h1>Kanban App</h1></web-slide-title><web-slide id="appintro"><mockup-browser><div id="app"><img src="images/kanban-app-screenshot.png"><div data-enter="1" data-exit="2" class="highlight highlight-app">Application</div><div data-enter="2" data-exit="3" class="highlight highlight-navbar">Navbar</div><div data-enter="3" data-exit="4" class="highlight highlight-board">Board</div><div data-enter="4" class="highlight highlight-list">List</div></div></mockup-browser></web-slide><web-slide><div class="flex"><div style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)">Component</div><div style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)">Dependency Injection</div></div><div class="flex"><div style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)">Templates</div><div style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)">Properties</div></div><div class="flex"><div style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)">Form</div></div></web-slide><web-slide-title class="sub"><h1>Component</h1></web-slide-title><web-slide id="hierachy"><h1>Components Hierachy</h1><svg width="70%" viewBox="0 0 1052.3622 744.09448"> <g
+	id="g3352"
+	transform="translate(250.91453,-509.2835)">
+	<g
+		id="g3445"
+		transform="translate(3.535529,-11.111678)">
+	<rect
+		style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		id="rect3344"
+		width="232.48476"
+		height="85.002487"
+		x="155.48866"
+		y="572.4649"
+		ry="3.1889675"
+		rx="5.0046053" />
+	<text
+		xml:space="preserve"
+		style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		x="245.74838"
+		y="622.19696"
+		id="text3348"
+		sodipodi:linespacing="125%"><tspan
+			sodipodi:role="line"
+			id="tspan3350"
+			x="245.74838"
+			y="622.19696">App</tspan></text>
+	</g>
+</g><g data-enter="1"><g
+       transform="translate(32.721578,-315.79)"
+       id="g3411">
+      <rect
+         rx="5.0046053"
+         ry="3.1889675"
+         y="572.4649"
+         x="155.48866"
+         height="85.002487"
+         width="232.48476"
+         id="rect3344-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3348-1"
+         y="625.20477"
+         x="221.04135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="625.20477"
+           x="221.04135"
+           id="tspan3350-5"
+           sodipodi:role="line">Navbar</tspan></text>
+           
+        <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 450.12157,452.33536 271.51215,571.93193" id="path3469" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-start="#g3352" inkscape:connection-end="#g3411"/>
+    </g></g><g data-enter="2"><g
+       id="g3411-1"
+       transform="translate(382.23436,-297.61802)">
+      <g
+         transform="translate(93.944187,-18.182746)"
+         id="g3440">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="231.13229"
+           y="625.20477"
+           id="text3348-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5"
+             x="231.13229"
+             y="625.20477">Board</tspan></text>
+      </g>
+      <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 186.24063,435.33536 362.85006,553.93193" id="path3481" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-end="#g3411-1" inkscape:connection-start="#g3352"/>
+    </g></g></svg></web-slide><web-slide id="helloworld"><pre is="lang-javascript" theme="dark">@Component({
   selector: 'my-app'
 })
 @View({
@@ -11,11 +91,308 @@ class MyAppComponent {
   constructor() {
     this.name = 'Alice';
   }
-}</pre></web-slide><web-slide id="di"><h1>Dependency Injection</h1><img src="images/hierachy-di.svg" width="70%"></web-slide><web-slide id="templateyntax1"><h1>Template Syntax</h1>Some theory about Directives</web-slide><web-slide id="localvariables"><H2>Local Variables</H2><pre is="lang-javascript" theme="dark">&lt;video-player #player&gt;&lt;/video-player&gt;
+}</pre></web-slide><web-slide-title class="sub"><h1>Dependency Injection</h1></web-slide-title><web-slide><svg width="70%" viewBox="0 0 1052.3622 744.09448"> <g
+	id="g3352"
+	transform="translate(250.91453,-509.2835)">
+	<g
+		id="g3445"
+		transform="translate(3.535529,-11.111678)">
+	<rect
+		style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		id="rect3344"
+		width="232.48476"
+		height="85.002487"
+		x="155.48866"
+		y="572.4649"
+		ry="3.1889675"
+		rx="5.0046053" />
+	<text
+		xml:space="preserve"
+		style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		x="245.74838"
+		y="622.19696"
+		id="text3348"
+		sodipodi:linespacing="125%"><tspan
+			sodipodi:role="line"
+			id="tspan3350"
+			x="245.74838"
+			y="622.19696">App</tspan></text>
+	</g>
+</g><g
+       transform="translate(32.721578,-315.79)"
+       id="g3411">
+      <rect
+         rx="5.0046053"
+         ry="3.1889675"
+         y="572.4649"
+         x="155.48866"
+         height="85.002487"
+         width="232.48476"
+         id="rect3344-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3348-1"
+         y="625.20477"
+         x="221.04135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="625.20477"
+           x="221.04135"
+           id="tspan3350-5"
+           sodipodi:role="line">Navbar</tspan></text>
+           
+        <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 450.12157,452.33536 271.51215,571.93193" id="path3469" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-start="#g3352" inkscape:connection-end="#g3411"/>
+    </g><g
+       id="g3411-1"
+       transform="translate(382.23436,-297.61802)">
+      <g
+         transform="translate(93.944187,-18.182746)"
+         id="g3440">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="231.13229"
+           y="625.20477"
+           id="text3348-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5"
+             x="231.13229"
+             y="625.20477">Board</tspan></text>
+      </g>
+      <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 186.24063,435.33536 362.85006,553.93193" id="path3481" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-end="#g3411-1" inkscape:connection-start="#g3352"/>
+    </g><g data-enter="1"><g
+       id="hierachy-di"
+       transform="translate(484.87322,-142.4315)">
+      <g
+         transform="translate(93.944187,-326.44972)"
+         id="g3440-4">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-6"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#005300;fill-opacity:0.49803922;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           x="271.50278"
+           y="608.04413"
+           id="text3348-1-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-5"
+             x="271.50278"
+             y="608.04413"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Board</tspan><tspan
+             sodipodi:role="line"
+             x="271.50278"
+             y="642.41913"
+             id="tspan3388"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Service</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:1.552;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 243.41276,657.2918 -45.80088,68.25438"
+           id="path4190"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="3"
+           inkscape:connection-end="#g3411-1" />
+      </g>
+    </g></g></svg></web-slide><web-slide><h1>Constructor injection</h1><pre is="lang-javascript" theme="dark">constructor(boardService:BoardService){
+	this.boardService = boardService;
+}
+</pre><pre is="lang-javascript" theme="dark" data-enter="1">bind(BoardService).toClass(BoardService)
+</pre></web-slide><web-slide><h1>Constructor injection</h1><pre is="lang-javascript" theme="dark">@Component({
+	viewBindings: [
+		bind(BoardService).toClass(BoardService)
+	]
+})
+constructor(boardService:BoardService){
+	this.boardService = boardService;
+}	
+</pre></web-slide><web-slide><h1>Constructor injection</h1><pre is="lang-javascript" theme="dark">@Component({
+	viewBindings: [
+		BoardService
+	]
+})
+constructor(boardService:BoardService){
+	this.boardService = boardService;
+}	
+</pre></web-slide><web-slide><h1>Every component has its own injector</h1><h3>Injector bubbles up till he finds a binding</h3><pre is="lang-markup" theme="dark">&lt;board&gt;
+	&lt;list&gt;
+		&lt;button&gt;</pre></web-slide><web-slide-title class="sub"><h1>Template Syntax</h1>Directives</web-slide-title><web-slide id="localvariables"><H2>Local Variables</H2><pre is="lang-javascript" theme="dark">&lt;video-player #player&gt;&lt;/video-player&gt;
 &lt;button (click)=&quot;player.pause()&quot;&gt;Pause&lt;/button&gt;
 </pre></web-slide><web-slide id="directivesandtemplates"><H2>Templates And *</H2><pre is="lang-javascript" theme="dark">&lt;todo-cmp *ng-for=&quot;#t of todos; #i=index&quot; [model]=&quot;t&quot; [index]=&quot;t&quot;&gt;&lt;/todo-cmp&gt;</pre><which>de-sugars into</which><pre is="lang-javascript" theme="dark">&lt;template ng-for ngForOf=&quot;todos&quot; #t=&quot;$implicit&quot; #index=&quot;i&quot;&gt;
 	&lt;todo-cmp [model]=&quot;t&quot; [index]=&quot;i&quot;&gt;&lt;/todo-cmp&gt;
-&lt;/template&gt;	</pre></web-slide><web-slide id="directives"><h1>Directives</h1><img src="images/hierachy-directives.svg" width="70%"></web-slide><web-slide id="templatesyntax2"><h1>Template Syntax</h1>Theory about propertries and events</web-slide><web-slide id="propertiesandevents"><h2>Property And Event Bindings</h2>Property Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;myTodo&quot;&gt;&lt;/todo-cmp&gt;</pre>Event Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;todo&quot; (complete)=&quot;onCompletingTodo(todo)&quot;&gt;&lt;/todo-cmp&gt;</pre></web-slide><web-slide id="eventpropagation"><h2>Property And Event Code Behind</h2><pre is="lang-javascript" theme="dark">@Component({
+&lt;/template&gt;	</pre></web-slide><web-slide-title class="sub"><h1>Directives</h1><p>So we still have directives?</p></web-slide-title><web-slide id="directives"><h1>Directives</h1><svg width="70%" viewBox="0 0 1052.3622 744.09448"> <g
+	id="g3352"
+	transform="translate(250.91453,-509.2835)">
+	<g
+		id="g3445"
+		transform="translate(3.535529,-11.111678)">
+	<rect
+		style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		id="rect3344"
+		width="232.48476"
+		height="85.002487"
+		x="155.48866"
+		y="572.4649"
+		ry="3.1889675"
+		rx="5.0046053" />
+	<text
+		xml:space="preserve"
+		style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		x="245.74838"
+		y="622.19696"
+		id="text3348"
+		sodipodi:linespacing="125%"><tspan
+			sodipodi:role="line"
+			id="tspan3350"
+			x="245.74838"
+			y="622.19696">App</tspan></text>
+	</g>
+</g><g
+       transform="translate(32.721578,-315.79)"
+       id="g3411">
+      <rect
+         rx="5.0046053"
+         ry="3.1889675"
+         y="572.4649"
+         x="155.48866"
+         height="85.002487"
+         width="232.48476"
+         id="rect3344-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3348-1"
+         y="625.20477"
+         x="221.04135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="625.20477"
+           x="221.04135"
+           id="tspan3350-5"
+           sodipodi:role="line">Navbar</tspan></text>
+           
+        <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 450.12157,452.33536 271.51215,571.93193" id="path3469" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-start="#g3352" inkscape:connection-end="#g3411"/>
+    </g><g
+       id="g3411-1"
+       transform="translate(382.23436,-297.61802)">
+      <g
+         transform="translate(93.944187,-18.182746)"
+         id="g3440">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="231.13229"
+           y="625.20477"
+           id="text3348-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5"
+             x="231.13229"
+             y="625.20477">Board</tspan></text>
+      </g>
+      <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 186.24063,435.33536 362.85006,553.93193" id="path3481" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-end="#g3411-1" inkscape:connection-start="#g3352"/>
+    </g><g
+       id="hierachy-di"
+       transform="translate(484.87322,-142.4315)">
+      <g
+         transform="translate(93.944187,-326.44972)"
+         id="g3440-4">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-6"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#005300;fill-opacity:0.49803922;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           x="271.50278"
+           y="608.04413"
+           id="text3348-1-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-5"
+             x="271.50278"
+             y="608.04413"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Board</tspan><tspan
+             sodipodi:role="line"
+             x="271.50278"
+             y="642.41913"
+             id="tspan3388"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Service</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:1.552;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 243.41276,657.2918 -45.80088,68.25438"
+           id="path4190"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="3"
+           inkscape:connection-end="#g3411-1" />
+      </g>
+    </g><g data-enter="1"><g
+       id="hierachy-list"
+       transform="translate(476.17855,-162)"
+       inkscape:label="#hierachy-list">
+      <g
+         id="g3514">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-7"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="246.69504"
+           y="624.84894"
+           id="text3348-1-1-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-7"
+             x="246.69504"
+             y="624.84894">List</tspan></text>
+      </g>
+      <path
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 271.73104,503.74147 0,68.72343"
+         id="path3519"
+         inkscape:connector-type="polyline"
+         inkscape:connector-curvature="3"
+         inkscape:connection-end="#g3514"
+         inkscape:connection-start="#g3411-1" />
+    </g></g></svg></web-slide><web-slide-title class="sub"><h1>Template Syntax</h1>propertries and events</web-slide-title><web-slide id="propertiesandevents"><h2>Property And Event Bindings</h2>Property Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;myTodo&quot;&gt;&lt;/todo-cmp&gt;</pre>Event Bindings<pre is="lang-javascript" theme="dark">&lt;todo-cmp [model]=&quot;todo&quot; (complete)=&quot;onCompletingTodo(todo)&quot;&gt;&lt;/todo-cmp&gt;</pre></web-slide><web-slide id="eventpropagation"><h2>Property And Event Code Behind</h2><pre is="lang-javascript" theme="dark">@Component({
   selector: 'todo-cmp',
   properties: ['model'],
   events: ['complete']
@@ -29,4 +406,194 @@ class TodoCmp {
 		this.complete.next(); // this fires an event
 	}  
 }
-</pre></web-slide><web-slide id="twowaybinding"><H2>Two-Way binding	</H2><pre is="lang-javascript" theme="dark">&lt;input [ng-model]=&quot;todo.text&quot; (ng-model)=&quot;todo.text=$event&quot;&gt;&lt;/input&gt;</pre>Or with syntactical sugar	<pre is="lang-javascript" theme="dark">&lt;input [(ng-model)]=&quot;todo.text&quot;&gt;&lt;/input&gt;</pre></web-slide><web-slide id="properties"><h1>properties</h1></web-slide><web-slide id="forms1"><h1>forms</h1><ul><li>No digest cycle</li><li>reactive (event based)</li><li>data driven</li></ul></web-slide><web-slide id="forms2"><h1>forms</h1><img src="images/forms_diagram.png"></web-slide><web-slide id="events"><h1>events</h1></web-slide><web-slide-title id="caniuse"><h1>Sounds great!</h1><h2>Can I use Angular2 for my next project?</h2></web-slide-title><web-slide><h1>Probably not </h1><p class="smiley">😢</p></web-slide><web-slide-title id="migraton"><h1>Migration</h1><h2>From Angular 1.x to Angular2</h2></web-slide-title><web-slide id="migration-today"><h1>Prepare yourself for the future!</h1><ul><li>Use controller as syntax</li><li>Treat everiting as a directive</li><li>Use ES6/7 or TypeScript</li><li>Structure your SPA into components</li></ul></web-slide><web-slide id="migration-next"><h1>Hotlist Angular 1x Migration	</h1><ul><li>The New Angular Router (coming with Angular 1.5 or 1.6)</li><li>Components in Angular 1.X</li><li>Google works on automated mirgation tools	</li></ul></web-slide><web-slide-title id="questions"><h1>questions</h1></web-slide-title><web-slide id="SlidesAndCode"><h1>Sildes &amp; Source-Code</h1><ul><li>Slides:<a href="https://github.com/web-net-team/AngularSneakPeek-presentation">https://github.com/web-net-team/AngularSneakPeek-presentation</a></li><li>Source-Code:<a href="https://github.com/web-net-team/AngularSneakPeek-Client">https://github.com/web-net-team/AngularSneakPeek-Client</a></li></ul></web-slide><web-slide id="Resources"><h1>Resources</h1><ul><li><a href="https://angular.io/">https://angular.io/</a></li><li><a href="https://github.com/angular/angular">https://github.com/angular/angular		</a></li><li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li><li><a href="https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/mobilebasic">https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/mobilebasic</a></li></ul></web-slide></web-presentation><script src="//localhost:9091">// livereload</script></body></html>
+</pre></web-slide><web-slide id="twowaybinding"><H2>Two-Way binding	</H2><pre is="lang-javascript" theme="dark">&lt;input [ng-model]=&quot;todo.text&quot; (ng-model)=&quot;todo.text=$event&quot;&gt;&lt;/input&gt;</pre>Or with syntactical sugar	<pre is="lang-javascript" theme="dark">&lt;input [(ng-model)]=&quot;todo.text&quot;&gt;&lt;/input&gt;</pre></web-slide><web-slide-title class="sub"><h1>Forms</h1></web-slide-title><web-slide id="forms"><svg width="70%" viewBox="0 0 1052.3622 744.09448"> <g
+	id="g3352"
+	transform="translate(250.91453,-509.2835)">
+	<g
+		id="g3445"
+		transform="translate(3.535529,-11.111678)">
+	<rect
+		style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		id="rect3344"
+		width="232.48476"
+		height="85.002487"
+		x="155.48866"
+		y="572.4649"
+		ry="3.1889675"
+		rx="5.0046053" />
+	<text
+		xml:space="preserve"
+		style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		x="245.74838"
+		y="622.19696"
+		id="text3348"
+		sodipodi:linespacing="125%"><tspan
+			sodipodi:role="line"
+			id="tspan3350"
+			x="245.74838"
+			y="622.19696">App</tspan></text>
+	</g>
+</g><g
+       transform="translate(32.721578,-315.79)"
+       id="g3411">
+      <rect
+         rx="5.0046053"
+         ry="3.1889675"
+         y="572.4649"
+         x="155.48866"
+         height="85.002487"
+         width="232.48476"
+         id="rect3344-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3348-1"
+         y="625.20477"
+         x="221.04135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="625.20477"
+           x="221.04135"
+           id="tspan3350-5"
+           sodipodi:role="line">Navbar</tspan></text>
+           
+        <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 450.12157,452.33536 271.51215,571.93193" id="path3469" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-start="#g3352" inkscape:connection-end="#g3411"/>
+    </g><g
+       id="g3411-1"
+       transform="translate(382.23436,-297.61802)">
+      <g
+         transform="translate(93.944187,-18.182746)"
+         id="g3440">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="231.13229"
+           y="625.20477"
+           id="text3348-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5"
+             x="231.13229"
+             y="625.20477">Board</tspan></text>
+      </g>
+      <path xmlns="http://www.w3.org/2000/svg" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 186.24063,435.33536 362.85006,553.93193" id="path3481" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-type="polyline" inkscape:connector-curvature="3" inkscape:connection-end="#g3411-1" inkscape:connection-start="#g3352"/>
+    </g><g
+       id="hierachy-di"
+       transform="translate(484.87322,-142.4315)">
+      <g
+         transform="translate(93.944187,-326.44972)"
+         id="g3440-4">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-6"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#005300;fill-opacity:0.49803922;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           x="271.50278"
+           y="608.04413"
+           id="text3348-1-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-5"
+             x="271.50278"
+             y="608.04413"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Board</tspan><tspan
+             sodipodi:role="line"
+             x="271.50278"
+             y="642.41913"
+             id="tspan3388"
+             style="-inkscape-font-specification:'sans-serif, Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:27.5px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">Service</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-rule:evenodd;stroke:#005300;stroke-width:1.552;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 243.41276,657.2918 -45.80088,68.25438"
+           id="path4190"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="3"
+           inkscape:connection-end="#g3411-1" />
+      </g>
+    </g><g
+       id="hierachy-list"
+       transform="translate(476.17855,-162)"
+       inkscape:label="#hierachy-list">
+      <g
+         id="g3514">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-7"
+           width="232.48476"
+           height="85.002487"
+           x="155.48866"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="246.69504"
+           y="624.84894"
+           id="text3348-1-1-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-7"
+             x="246.69504"
+             y="624.84894">List</tspan></text>
+      </g>
+      <path
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 271.73104,503.74147 0,68.72343"
+         id="path3519"
+         inkscape:connector-type="polyline"
+         inkscape:connector-curvature="3"
+         inkscape:connection-end="#g3514"
+         inkscape:connection-start="#g3411-1" />
+    </g><g data-enter="1"><g
+       id="hierachy-button"
+       transform="translate(481.60541,55.50)">
+      <g
+         id="<g3514-7></g3514-7>"
+         transform="translate(-5.42686,-63.639611)">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85033172px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="rect3344-8-2-7-3"
+           width="232.48476"
+           height="85.002487"
+           x="156.01201"
+           y="572.4649"
+           ry="3.1889675"
+           rx="5.0046053" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="200.70471"
+           y="624.84894"
+           id="text3348-1-1-8-9"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3350-5-5-7-7"
+             x="200.70471"
+             y="624.84894">AddButton</tspan></text>
+      </g>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 266.70927,508.82529 -0.19181,-68.936"
+         id="path3581"
+         inkscape:connector-type="polyline"
+         inkscape:connector-curvature="3"
+         inkscape:connection-start="#g3514-7"
+         inkscape:connection-end="#g3440-4" />
+    </g></g></svg></web-slide><web-slide id="forms1"><h1>Form</h1><ul><li>No digest cycle</li><li>reactive (event based)</li><li>data driven</li></ul></web-slide><web-slide id="forms2"><h1>Forms</h1><img src="images/forms_diagram.png"></web-slide><web-slide-title id="caniuse"><h1>Sounds great!</h1><h2>Can I use Angular2 for my next project?</h2></web-slide-title><web-slide><h1>Probably not </h1><p class="smiley">😢</p></web-slide><web-slide-title id="migraton"><h1>Migration</h1><h2>From Angular 1.x to Angular2</h2></web-slide-title><web-slide id="migration-today"><h1>Prepare yourself for the future!</h1><ul><li>Use controller as syntax</li><li>Treat everiting as a directive</li><li>Use ES6/7 or TypeScript</li><li>Structure your SPA into components</li></ul></web-slide><web-slide id="migration-next"><h1>Hotlist Angular 1x Migration	</h1><ul><li>The New Angular Router (coming with Angular 1.5 or 1.6)</li><li>Components in Angular 1.X</li><li>Google works on automated mirgation tools	</li></ul></web-slide><web-slide-title id="questions"><h1>questions</h1></web-slide-title><web-slide id="SlidesAndCode"><h1>Sildes &amp; Source-Code</h1><ul><li>Slides:<a href="https://github.com/web-net-team/AngularSneakPeek-presentation">https://github.com/web-net-team/AngularSneakPeek-presentation</a></li><li>Source-Code:<a href="https://github.com/web-net-team/AngularSneakPeek-Client">https://github.com/web-net-team/AngularSneakPeek-Client</a></li></ul></web-slide><web-slide id="Resources"><h1>Resources</h1><ul><li><a href="https://angular.io/">https://angular.io/</a></li><li><a href="https://github.com/angular/angular">https://github.com/angular/angular		</a></li><li><a href="https://github.com/timjacobi/angular2-education">https://github.com/timjacobi/angular2-education</a></li><li><a href="https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/mobilebasic">https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/mobilebasic</a></li></ul></web-slide></web-presentation><script src="//localhost:9091">// livereload</script></body></html>

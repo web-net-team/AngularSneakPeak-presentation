@@ -11,6 +11,11 @@ web-slide-title {
 	background: #231F20;
 }
 
+web-slide-title.sub {
+	background: #60d7a9;
+	color: rgba(0,0,0,0.5);
+}
+
 pre[is="lang-javascript"] {
 	font-size: 0.8em;
 }
@@ -148,3 +153,12 @@ web-slide-title#topics div#topics-container > div{
 }
 
 web-slide#rip h1, web-slide#rip h2 { color: #FFF; }
+
+
+/* Tree */
+#hierachy svg g#hierachy-list, 
+#hierachy svg g#hierachy-button,
+#hierachy svg g#hierachy-di 
+{
+	display: none;
+}

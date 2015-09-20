@@ -1,0 +1,52 @@
+web-slide-title.sub
+	h1 Dependency Injection
+
+web-slide
+	svg(width="70%" viewBox="0 0 1052.3622 744.09448")
+		include ./../../images/tree/appnode.svg
+		include ./../../images/tree/navnode.svg
+		include ./../../images/tree/boardnode.svg
+		g(data-enter="1")
+			include ./../../images/tree/dinode.svg
+			
+web-slide
+	h1 Constructor injection
+	pre(is="lang-javascript", theme="dark").
+		constructor(boardService:BoardService){
+			this.boardService = boardService;
+		}
+	
+	pre(is="lang-javascript", theme="dark", data-enter="1").
+		bind(BoardService).toClass(BoardService)
+
+web-slide
+	h1 Constructor injection
+	pre(is="lang-javascript", theme="dark").
+		@Component({
+			viewBindings: [
+				bind(BoardService).toClass(BoardService)
+			]
+		})
+		constructor(boardService:BoardService){
+			this.boardService = boardService;
+		}	
+
+web-slide
+	h1 Constructor injection
+	pre(is="lang-javascript", theme="dark").
+		@Component({
+			viewBindings: [
+				BoardService
+			]
+		})
+		constructor(boardService:BoardService){
+			this.boardService = boardService;
+		}	
+		
+web-slide
+	h1 Every component has its own injector
+	h3 Injector bubbles up till he finds a binding
+	pre(is="lang-markup", theme="dark").
+		&lt;board&gt;
+			&lt;list&gt;
+				&lt;button&gt;
