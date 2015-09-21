@@ -23,7 +23,7 @@ web-slide
 	h1 Constructor injection
 	pre(is="lang-javascript", theme="dark").
 		@Component({
-			viewBindings: [
+			bindings: [
 				bind(BoardService).toClass(BoardService)
 			]
 		})
@@ -35,7 +35,7 @@ web-slide
 	h1 Constructor injection
 	pre(is="lang-javascript", theme="dark").
 		@Component({
-			viewBindings: [
+			bindings: [
 				BoardService
 			]
 		})
@@ -50,3 +50,5 @@ web-slide
 		&lt;board&gt;
 			&lt;list&gt;
 				&lt;button&gt;
+				
+include ./codingtime.jade

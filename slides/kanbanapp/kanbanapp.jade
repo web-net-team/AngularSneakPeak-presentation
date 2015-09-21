@@ -22,6 +22,8 @@ web-slide#directives
 		include ./../../images/tree/dinode.svg
 		g(data-enter="1")
 			include ./../../images/tree/listnode.svg
+			
+include ./templates.jade
 	
 include ./propertiesandevents.jade	
 	
@@ -48,3 +50,13 @@ web-slide#forms1
 web-slide#forms2
 	h1 Forms
 	img(src="images/forms_diagram.png")
+	
+web-slide
+	div.flex
+		div(style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)") Component
+		div(style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)") Dependency Injection
+	div.flex
+		div(style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)") Templates
+		div(style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)") Properties
+	div.flex
+		div(style="width: 200px; margin: 5px; padding: 20px; background: #60d7a9; font-color: rgba(0,0,0,0.5)") Form	

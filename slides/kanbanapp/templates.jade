@@ -2,11 +2,11 @@ web-slide-title.sub
 	h1 Template Syntax
 	| Directives
 	
-web-slide#localvariables
-	H2 Local Variables
-	pre(is="lang-javascript", theme="dark").
-		&lt;video-player #player&gt;&lt;/video-player&gt;
-		&lt;button (click)=&quot;player.pause()&quot;&gt;Pause&lt;/button&gt;
+// web-slide#localvariables
+// 	H2 Local Variables
+// 	pre(is="lang-javascript", theme="dark").
+// 		&lt;video-player #player&gt;&lt;/video-player&gt;
+// 		&lt;button (click)=&quot;player.pause()&quot;&gt;Pause&lt;/button&gt;
 		
 web-slide#directivesandtemplates
 	H2 Templates And *
@@ -17,4 +17,6 @@ web-slide#directivesandtemplates
 	pre(is="lang-javascript", theme="dark").
 		&lt;template ng-for ngForOf=&quot;todos&quot; #t=&quot;$implicit&quot; #index=&quot;i&quot;&gt;
 			&lt;todo-cmp [model]=&quot;t&quot; [index]=&quot;i&quot;&gt;&lt;/todo-cmp&gt;
-		&lt;/template&gt;	
+		&lt;/template&gt;
+
+include ./codingtime.jade
