@@ -16,10 +16,6 @@ web-slide-title.sub {
 	color: rgba(0,0,0,0.5);
 }
 
-pre[is="lang-javascript"] {
-	font-size: 0.8em;
-}
-
 img {
 	vertical-align: middle;
 }
