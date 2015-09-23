@@ -12,4 +12,14 @@ web-slide#hierachy
 	
 include ./helloworld.jade
 
+web-slide
+	h1 So a component is like a directive?
+	p(style="font-size: 2em;", data-enter="1") A component is a directive with a view.
+	pre(is="lang-javascript", theme="dark", data-enter="2").
+		@Directive({selector: '[ng-if]', properties: ['ngIf']})
+		class NgIf {
+			constructor() {}
+			}
+		}
+
 include ./codingtime.jade
